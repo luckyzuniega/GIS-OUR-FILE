@@ -15,12 +15,18 @@
             var answer=num1*num2;
             document.getElementById('answer').innerHTML=answer;
         }
+	function addition(){
+    	    var num1=parseFloat(document.getElementById('num1').value);
+            var num2=parseFloat(document.getElementById('num2').value);
+            var answer=num1+num2;
+            document.getElementById('answer').innerHTML=answer;
+	}
     </script>
 
     <input type="text" name="" id="num1" placeholder="Input 1">
     <input type="text" name="" id="num2" placeholder="Input 2">
     <br>
-    <button type="button" onclick="">Add</button>
+    <button type="button" onclick="addition()">Add</button>
     <button type="button" onclick="">Subtract</button>
     <button type="button" onclick="">Division</button>
     <button type="button" onclick="multiply()">Multiply</button>
